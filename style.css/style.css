@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /* list-style: none; */
+}
+a{
+    color: inherit;
+}
+
+.main{
+    width: 100%;
+    background-color: white;
+    /* border: 2px solid red; */
+}
+
+.header{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0px;
+    box-shadow: 2px 0px 3px 5px rgba(0,0,0,.05);
+}
+
+.header .nav>ul{
+    display: flex;
+    margin-top: 27px;
+    margin-left: 45px;
+    list-style: none;
+}
+
+.header .nav ul li{
+    margin: 0px 15px;
+}
+
+
+.header .nav ul li a{
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.header .nav ul li:nth-child(4) .men .col1 p{
+    color: #F2C210;
+}
+
+.header .nav ul li:nth-child(5) .men .col1 p{
+    color: #0DB7AF;
+}
+
+.header .nav ul li:nth-child(1,2,3,4,5,6){
+    position: relative;
+}
+
+.men{
+    width: 1050px;
+    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 100%;
+    left: -200%;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.studio{
+    width: 545px;
+    height: 454px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: -200%;
+    transition: .5s;
+    visibility:hidden;
+}
+
+.explorestudio{
+    width: 164px;
+    height: 40px;
+    border: 1px solid #d4d5d8;
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left: 175px;
+}
+
+.men .col1 {
+    font-size: 14px;
+    padding: 0px 2px;
+}
+
+.men .col1 p{
+    padding: 10px 4px 10px 12px;
+    color: #FF6F7E;
+    font-weight: bold;
+}
+
+
+.men .col1 ul li{
+    list-style: none;
+    
+}
+
+.men .col1 ul li a{
+    font-weight: normal;
+    line-height: 23px;   
+}
+
+.men .col1 ul li a:hover{
+    font-weight: bold;
+}
+
+.nav ul li:first-child:hover .men{
+    left: 11%;
+    visibility: visible;
+}
+
+.nav ul li:nth-child(2):hover .men{
+    left: 10%;
+    visibility:visible;
+}
+
+.nav ul li:nth-child(3):hover .men{
+    left: 10%;
+    visibility:visible;
+}
+
+.nav ul li:nth-child(4):hover .men{
+    left: 10%;
+    visibility:visible;
+}
+
+.nav ul li:nth-child(5):hover .men{
+    left: 10%;
+    visibility:visible;
+}
+
+.nav ul li:nth-child(6):hover .studio{
+    left: 20%;
+    visibility:visible;
+}
+
+.header .searchbar{
+    width: 550px;
+    height: 35px;
+    margin-left: 45px;
+    margin-top: 20px;
+    padding: 10px 0px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 45px;
+    border-radius: 5px;
+}
+
+.searchbar input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding-top: 10px;
+}
+
+.header .searchbar .textsearch{
+    margin-bottom: 10px;
+}
+.header .searchbar input{
+    width: 320px;
+    border: transparent;
+    outline: none;
+}
+
+.icons{
+    width: 194px;
+    display: flex ;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.icons .icon1 p{
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.row1 img{
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.crazyimg{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.shopbycategoryimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row3img {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.footer{
+    width: 100%;
+    background-color: #fafbfc;
+    padding: 30px 40px;
+}
+
+
+.footer .part1{
+    display: flex; 
+    justify-content: space-evenly;
+    margin: 0px 220px;
+    margin-bottom: 25px;
+}
+
+.footer .part1 ul{
+    list-style: none;
+}
+
+.footer p{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+.footer a{
+    font-size: 15px;
+    color: rgb(105, 107, 121);
+}
+
+.footer hr{
+    /* color: rgb(105, 107, 121); */
+}
+
+
+.footer .col3 img{
+    width: 140px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer .col3 .experience-myntra-app p{
+    padding-bottom: 5px;
+}
+
+.footer .keepintouch img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer .col4 .original img{
+    width: 48px;
+    height: 40px;
+    float: left;
+    margin-top: 20px;
+    margin-right:  5px;
+}
+
+.footer .col4 .original .text{
+    float: left;
+}
+
+.footer .col4 .original .text p{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+
+.footer .col4 .original .text span{
+    font-size: 15px;
+    color: rgb(105, 107, 121);
+}
+
+.footer .part2 {
+    margin: 0px 220px;
+}
+
+.footer .part3{
+    margin: 40px 220px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.footer .part3 span{
+    color: rgb(105, 107, 121);
+
+}
+
+.footer .part4{
+    margin: 10px 220px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.footer .part4 .registered-office p{
+    font-size: 15px;
+}
+
+.footer .part4 .registered-office span{
+    font-size: 15px;
+    color: rgb(105, 107, 121);
+}
+
+
+.footer .part4 .gst-mobile{
+    font-size: 15px;
+    color: rgb(105, 107, 121);
+    margin-top: 160px;
+}
+
+.footer .part5 {
+    margin: 0px 220px;
+}
+
+.footer .part5 .online-shopping p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer .part5 .online-shopping span{
+    font-size: 14px;
+    color: rgb(105, 107, 121);
+}
+
+.footer .part5 .online-shopping ol {
+    font-size: 14px;
+    color: rgb(105, 107, 121);
+    margin-bottom: 10px;
+}
+
+.section1{
+    width: 100%;
+    height: 430px;
+    padding:20px 0px 15px 0px ;
+}
+
+.section2 h4{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 70px 0px 10px 30px;
+    font-weight: 700;
+}
+
+.section2 .biggest-deal-img{
+    padding: 40px 30px 0px 60px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+}
